@@ -26,8 +26,27 @@ img,a{
     display: block;
 }
 
+.nav-item-list{
+    list-style-type: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color:var(--fire-brick);
+}
+
+.nav-item a:hover{
+    text-decoration: underline;
+}
+
 .grid-wrapper{
     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-auto-rows: minmax(100px,auto); */
+}
+
+.box{
+    text-align:center;
 }
 
 .box:nth-child(2n){
