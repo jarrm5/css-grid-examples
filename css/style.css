@@ -43,6 +43,12 @@ img,a{
 
 /* Main styles */
 
+header{
+    display:grid;
+    justify-content:center;
+    text-align:center;
+}
+
 .logo {
     color:var(--indigo-dye);
 }
@@ -59,6 +65,18 @@ img,a{
     text-decoration: underline;
 }
 
+button{
+    font-size:inherit;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border:none;
+}
+
+main {
+    border-top: 0.15rem solid var(--indigo-dye);
+    border-bottom: 0.15rem solid var(--indigo-dye);
+}
+
 .grid-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -71,4 +89,21 @@ img,a{
 
 .box:nth-child(2n){
     background-color: var(--air-superiority-blue);
+}
+
+@media screen and (min-width: 769px){
+    main{
+        border: none;
+    }
+
+    button {
+        border-radius: 8px;
+        box-shadow: 0px 0px 3px 1px var(--jet);
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: var(--indigo-dye);
+        color: var(--white);
+    }
 }
