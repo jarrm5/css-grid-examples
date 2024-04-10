@@ -3,11 +3,11 @@
 
 :root {
     /* CSS HSL */
-    --barn-red: hsla(0, 100%, 24%, 1);
-    --fire-brick: hsla(356, 83%, 41%, 1);
-    --papaya-whip: hsla(40, 91%, 91%, 1);
-    --prussian-blue: hsla(201, 100%, 14%, 1);
-    --air-superiority-blue: hsla(203, 39%, 57%, 1);
+    --jet: hsla(0, 0%, 21%, 1);
+    --caribbean-current: hsla(183, 31%, 34%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --platinum: hsla(0, 0%, 85%, 1);
+    --indigo-dye: hsla(204, 42%, 27%, 1);
 }
 
 *,*::before,*::after{
@@ -16,14 +16,35 @@
     margin: 0;
 }
 
+html {
+    background-color: var(--indigo-dye);
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    width: max(450px,90%);
+    height: 95vh;
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 10px black;
 }
 
 img,a{
     display: block;
+}
+
+/* Main styles */
+
+.logo {
+    color:var(--indigo-dye);
 }
 
 .nav-item-list{
@@ -32,7 +53,6 @@ img,a{
 
 .nav-item a{
     text-decoration: none;
-    color:var(--fire-brick);
 }
 
 .nav-item a:hover{
