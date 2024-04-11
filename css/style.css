@@ -52,8 +52,10 @@ header{
     text-align:center;
 }
 
-.logo {
+.logo h1{
     color:var(--indigo-dye);
+    /* font-size: 2vw; */
+    font-size: clamp(2rem,2vw + 1rem,3rem);
 }
 
 .nav-item-list{
@@ -63,13 +65,17 @@ header{
 .nav-item a{
     text-decoration: none;
     color:var(--black);
+    /* font-size: 2.5vw; */
+    font-size: clamp(1.5rem,1vw + 1rem,2rem);
 }
 
 button{
     font-size:inherit;
     background-color: var(--white);
-    padding: 0.5rem;
+    padding: 0.25rem;
     border:none;
+    /* font-size: 2vw; */
+    font-size: clamp(1.5rem,1vw + 1rem,2rem);
 }
 
 main {
@@ -104,7 +110,7 @@ main {
     }
 
     .nav-item a{
-        font-size: 1.25rem;
+        /* font-size: 1.25rem; */
     }
 
     .nav-item a:hover{
